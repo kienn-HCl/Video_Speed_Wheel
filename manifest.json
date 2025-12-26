@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Video Wheel Speed Controller",
+  "version": "0.1.0",
+  "description": "Adjust video playback speed by scrolling.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
